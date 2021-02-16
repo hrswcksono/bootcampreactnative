@@ -25,9 +25,11 @@
 
 // Soal 2
 {
-    var hari = 21; 
+    var hari = 32; 
     var bulan = 1; 
     var tahun = 1945;
+
+    var bulancp = bulan;
 
     switch(bulan){
         case 1: {
@@ -80,5 +82,7 @@
         }
     }
 
-    console.log(hari + " " + bulan + " " + tahun);
+    if(1<=hari<=31 && 1<=bulancp<=12 && 1900<=tahun<=2200){
+        console.log(hari + " " + bulan + " " + tahun);
+    }
 }
