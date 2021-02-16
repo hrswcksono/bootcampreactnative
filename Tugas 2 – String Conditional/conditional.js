@@ -25,9 +25,9 @@
 
 // Soal 2
 {
-    var hari = 32; 
+    var hari = 31; 
     var bulan = 1; 
-    var tahun = 1945;
+    var tahun = 1900;
 
     var bulancp = bulan;
 
@@ -82,7 +82,7 @@
         }
     }
 
-    if(1<=hari<=31 && 1<=bulancp<=12 && 1900<=tahun<=2200){
+    if(hari>=1 && hari<=31 && 1<=bulancp && bulancp<=12 && 1900<=tahun && tahun<=2200){
         console.log(hari + " " + bulan + " " + tahun);
     }
 }
