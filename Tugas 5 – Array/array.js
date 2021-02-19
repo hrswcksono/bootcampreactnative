@@ -118,25 +118,16 @@ console.log("\n===No 4===");
         ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
     ]
 
-    function dataHandling(input){
-        var push = ["Nomor ID:  "  ,, ,];
-        var push1 = ["Nama Lengkap:  "];
-        var push2 = ["TTL:  "];
-        var push3 = ["Hobi:  "];
+    function dataHandling(input) {
+        for (var idx = 0; idx < input.length; idx++) {
+          var data = input[idx];
+          console.log(
+            `Nomor ID: ${data[0]} \nNama Lengkap: ${data[1]} \nTTL: ${data[2]} ${data[3]} \nHobi: ${data[4]} \n`
+          );
+        }
+      }
 
-        // for(var idx=0; idx<input.length; idx++){
-        //     if(input[idx][1]){
-        //         input[idx][1].unShift(push);
-        //     }
-        // }
-
-        return input;
-    }
-
-    // console.log(dataHandling(input));
-    var numbers = [0, 1, 2, 3]
-numbers.unshift(-1) 
-console.log(numbers) // [-1, 0, 1, 2, 3]
+    dataHandling(input);
 }
 
 // Soal 5
@@ -146,7 +137,7 @@ console.log("\n===No 5===");
         var balik = [];
         
         var temp = arr.length-1;
-        for(var idx = 0; idx < arr.length-1; idx++){
+        for(var idx = 0; idx < arr.length; idx++){
             balik[idx] = arr[temp];
             temp--;
         }
@@ -164,5 +155,5 @@ console.log("\n===No 5===");
 // Soal 6
 console.log("\n===No 6===");
 {
-
+    
 }
