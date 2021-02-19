@@ -155,5 +155,8 @@ console.log("\n===No 5===");
 // Soal 6
 console.log("\n===No 6===");
 {
-    
+    var input2 = ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"];
+    function dataHandling2(input){
+        
+    }
 }
