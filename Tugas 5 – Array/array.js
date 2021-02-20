@@ -134,8 +134,7 @@ console.log("\n===No 4===");
 console.log("\n===No 5===");
 {
     function balikKata(arr){
-        var balik = [];
-        
+        var balik = [];       
         var temp = arr.length-1;
         for(var idx = 0; idx < arr.length; idx++){
             balik[idx] = arr[temp];
@@ -155,8 +154,80 @@ console.log("\n===No 5===");
 // Soal 6
 console.log("\n===No 6===");
 {
-    var input2 = ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"];
-    function dataHandling2(input){
-        
+    var data = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
+
+function dataHandling2(textInput) {
+    textInput.splice(4, 1, "Pria", "SMA Internasional Metro");
+    textInput.splice(1, 1, "Roman Alamsyah Elsharawy");
+    textInput.splice(2, 1, "Provinsi Bandar Lampung");
+    console.log(JSON.stringify(textInput));
+  
+    var splitDate = textInput.splice(3, 1);
+    var date = splitDate.toString().split("/");
+    var month = date[1];
+  
+    switch (month) {
+      case "01": {
+        console.log("Januari");
+        break;
+      }
+      case "02": {
+        console.log("Februari");
+        break;
+      }
+      case "03": {
+        console.log("Maret");
+        break;
+      }
+      case "04": {
+        console.log("April");
+        break;
+      }
+      case "05": {
+        console.log("Mei");
+        break;
+      }
+      case "06": {
+        console.log("Juni");
+        break;
+      }
+      case "07": {
+        console.log("Juli");
+        break;
+      }
+      case "08": {
+        console.log("Agustus");
+        break;
+      }
+      case "09": {
+        console.log("September");
+        break;
+      }
+      case "10": {
+        console.log("Oktober");
+        break;
+      }
+      case "11": {
+        console.log("Nopember");
+        break;
+      }
+      case "12": {
+        console.log("Desember");
+        break;
+      }
     }
+  
+    var sortDate = date.sort(function (a, b) {
+      return b - a;
+    });
+    console.log(JSON.stringify(sortDate));
+  
+    var date = splitDate.toString().split("/").join("-");
+    console.log(date);
+  
+    var name = textInput[1].toString().slice(0, 15);
+    console.log(name);
+  }
+
+dataHandling2(data);
 }
