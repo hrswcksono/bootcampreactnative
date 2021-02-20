@@ -154,7 +154,7 @@ console.log("\n===No 5===");
 // Soal 6
 console.log("\n===No 6===");
 {
-    var data = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
+var data = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
 
 function dataHandling2(textInput) {
     textInput.splice(4, 1, "Pria", "SMA Internasional Metro");
@@ -217,10 +217,10 @@ function dataHandling2(textInput) {
       }
     }
   
-    var sortDate = date.sort(function (a, b) {
+    var Date = date.sort(function (a, b) {
       return b - a;
     });
-    console.log(JSON.stringify(sortDate));
+    console.log(JSON.stringify(Date));
   
     var date = splitDate.toString().split("/").join("-");
     console.log(date);
