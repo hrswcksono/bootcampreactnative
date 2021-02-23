@@ -3,15 +3,13 @@ console.log("No 1")
 {
     const golden = goldenFunction = () => {
         console.log("this is golden!!")
-    } 
-       
+    }      
     golden()
 }
 
 // Soal 2
 console.log("\nNo 2")
 {
-
     const newFunction = function literal(firstName, lastName){
         return {
             firstName,
